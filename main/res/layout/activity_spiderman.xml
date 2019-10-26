@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".SpidermanActivity">
+
+    <ImageView
+        android:id="@+id/spiderman_logo"
+        android:layout_width="302dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginLeft="54dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginRight="55dp"
+        android:layout_marginBottom="21dp"
+        android:src="@drawable/spiderman_logo"
+        app:layout_constraintBottom_toTopOf="@+id/spiderman"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/spiderman"
+        android:layout_width="263dp"
+        android:layout_height="280dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginLeft="74dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="74dp"
+        android:layout_marginRight="74dp"
+        android:layout_marginBottom="315dp"
+        android:src="@drawable/spiderman"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spiderman_logo"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txvInfoSpiderman"
+        android:layout_width="345dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginRight="33dp"
+        android:layout_marginBottom="54dp"
+        android:gravity="center"
+        android:text="Anthony Stark es un millonario magnate empresarial estadounidense, playboy e ingenioso científico, sufre una grave lesión en el pecho durante un secuestro. Más tarde, Stark desarrolla su traje. Él usa el traje y las versiones sucesivas para proteger al mundo como Iron Man."
+        android:textColor="#ffffff"
+        android:textSize="7pt"
+        app:layout_constraintBottom_toTopOf="@+id/btnRegresar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spiderman" />
+
+    <Button
+        android:id="@+id/btnRegresar"
+        android:layout_width="112dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="278dp"
+        android:layout_marginLeft="278dp"
+        android:layout_marginTop="54dp"
+        android:text="Regresar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvInfoSpiderman" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
